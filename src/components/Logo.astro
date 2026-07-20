@@ -1,0 +1,22 @@
+---
+const {
+  src,
+  alt,
+  fallback = "🤖",
+} = Astro.props;
+---
+
+{
+  src ? (
+    <img
+      src={src}
+      alt={alt}
+      class="h-full w-full object-contain"
+      loading="lazy"
+    />
+  ) : (
+    <div class="flex h-full w-full items-center justify-center text-4xl">
+      {fallback}
+    </div>
+  )
+}

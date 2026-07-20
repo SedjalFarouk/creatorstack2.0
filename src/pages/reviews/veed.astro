@@ -1,0 +1,116 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+import { affiliateLinks } from "../../data/affiliateLinks";
+
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
+
+import ReviewHero from "../../components/reviews/ReviewHero.astro";
+import QuickVerdict from "../../components/reviews/QuickVerdict.astro";
+import ProsCons from "../../components/reviews/ProsCons.astro";
+import BestFor from "../../components/reviews/BestFor.astro";
+import Pricing from "../../components/reviews/Pricing.astro";
+import Features from "../../components/reviews/Features.astro";
+import ScoreBreakdown from "../../components/reviews/ScoreBreakdown.astro";
+import Screenshots from "../../components/reviews/Screenshots.astro";
+import HowWeTested from "../../components/reviews/HowWeTested.astro";
+import AuthorBox from "../../components/reviews/AuthorBox.astro";
+import FinalVerdict from "../../components/reviews/FinalVerdict.astro";
+import AffiliateCTA from "../../components/reviews/AffiliateCTA.astro";
+import StickyCTA from "../../components/reviews/StickyCTA.astro";
+import Alternatives from "../../components/reviews/Alternatives.astro";
+import FAQ from "../../components/reviews/FAQ.astro";
+import LastUpdated from "../../components/reviews/LastUpdated.astro";
+---
+
+<MainLayout title="VEED Review 2026 | CreatorStack">
+
+  <Header />
+
+  <Breadcrumbs
+    items={[
+      { name: "Home", href: "/" },
+      { name: "Reviews", href: "/reviews" },
+      { name: "VEED Review", href: "/reviews/veed" },
+    ]}
+  />
+
+  <AffiliateDisclosure />
+
+  <LastUpdated date="July 20, 2026" />
+
+  <ReviewHero
+    title="VEED Review 2026"
+    description="Our hands-on review of VEED AI Video Editor."
+    category="AI Video"
+    rating={4.8}
+    logo="/images/tools/veed.png"
+  />
+
+  <QuickVerdict
+    score={4.8}
+    summary="VEED is one of the easiest AI video editors for creators, marketers and businesses."
+  />
+
+  <ProsCons
+    pros={[
+      "Very beginner friendly",
+      "Excellent AI subtitles",
+      "Fast browser editor",
+      "No software installation",
+      "Large template library",
+    ]}
+    cons={[
+      "Limited free plan",
+      "Premium AI tools require paid plan",
+      "Needs a stable internet connection",
+    ]}
+  />
+
+  <BestFor
+    bestFor={[
+      "YouTubers",
+      "TikTok Creators",
+      "Marketing Teams",
+      "Freelancers",
+      "Small Businesses",
+    ]}
+  />
+
+  <Pricing
+    price="From $12/month"
+    website={affiliateLinks.veed}
+  />
+
+  <Features />
+
+  <ScoreBreakdown />
+
+  <Screenshots />
+
+  <HowWeTested />
+
+  <AuthorBox />
+
+  <Alternatives />
+
+  <FAQ />
+
+  <FinalVerdict />
+
+  <AffiliateCTA
+    buttonText="Start Using VEED"
+    affiliateLink={affiliateLinks.veed}
+  />
+
+  <StickyCTA
+    affiliateLink={affiliateLinks.veed}
+  />
+
+  <Footer />
+
+</MainLayout>

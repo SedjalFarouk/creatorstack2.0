@@ -1,0 +1,63 @@
+---
+const screenshots = [
+  {
+    title: "VEED Dashboard",
+    image: "/images/reviews/veed/dashboard.webp",
+  },
+  {
+    title: "Video Editor",
+    image: "/images/reviews/veed/editor.webp",
+  },
+  {
+    title: "AI Subtitles",
+    image: "/images/reviews/veed/subtitles.webp",
+  },
+  {
+    title: "Templates",
+    image: "/images/reviews/veed/templates.webp",
+  },
+];
+---
+
+<section class="mx-auto max-w-7xl px-6 py-20">
+
+  <div class="mb-12 text-center">
+
+    <h2 class="text-4xl font-bold">
+      VEED Interface
+    </h2>
+
+    <p class="mt-4 text-lg text-gray-600">
+      A quick look at the editor and its AI features.
+    </p>
+
+  </div>
+
+  <div class="grid gap-8 md:grid-cols-2">
+
+    {screenshots.map((shot) => (
+
+      <div class="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+
+        <img
+          src={shot.image}
+          alt={shot.title}
+          class="w-full object-cover"
+          loading="lazy"
+        />
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold">
+            {shot.title}
+          </h3>
+
+        </div>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</section>

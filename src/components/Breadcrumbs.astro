@@ -1,0 +1,38 @@
+---
+interface Props {
+  items: {
+    name: string;
+    href: string;
+  }[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="mx-auto max-w-6xl px-6 pt-8 text-sm text-gray-500">
+
+  <ol class="flex flex-wrap items-center gap-2">
+
+    {items.map((item, index) => (
+
+      <>
+        <li>
+          <a
+            href={item.href}
+            class="hover:text-blue-600"
+          >
+            {item.name}
+          </a>
+        </li>
+
+        {index < items.length - 1 && (
+          <li>/</li>
+        )}
+
+      </>
+
+    ))}
+
+  </ol>
+
+</nav>

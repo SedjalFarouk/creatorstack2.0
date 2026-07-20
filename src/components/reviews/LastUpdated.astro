@@ -1,0 +1,18 @@
+---
+interface Props{
+date:string;
+}
+
+const {date}=Astro.props;
+---
+
+<div class="mx-auto max-w-6xl px-6 pt-6">
+
+<p class="text-sm text-gray-500">
+
+📅 Last Updated:
+<strong>{date}</strong>
+
+</p>
+
+</div>

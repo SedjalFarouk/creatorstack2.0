@@ -1,0 +1,89 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ReviewCard from "../components/ReviewCard.astro";
+---
+
+<MainLayout title="AI Tool Reviews | CreatorStack">
+
+<Header />
+
+<section class="mx-auto max-w-7xl px-6 py-20">
+
+  <div class="mb-14 text-center">
+
+    <h1 class="text-5xl font-extrabold">
+      AI Tool Reviews
+    </h1>
+
+    <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+      Honest, in-depth reviews of the best AI tools for creators,
+      marketers, developers and businesses.
+    </p>
+
+  </div>
+
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+    <ReviewCard
+      title="VEED"
+      description="AI Video Editor with subtitles, avatars and online editing."
+      category="AI Video"
+      rating={4.8}
+      href="/reviews/veed"
+      logo="/images/tools/veed.png"
+    />
+
+    <ReviewCard
+      title="ChatGPT"
+      description="The world's most popular AI assistant."
+      category="AI Chatbot"
+      rating={4.9}
+      href="/reviews/chatgpt"
+      logo="/images/tools/chatgpt.png"
+    />
+
+    <ReviewCard
+      title="Canva AI"
+      description="Design graphics using AI."
+      category="Design"
+      rating={4.8}
+      href="/reviews/canva"
+      logo="/images/tools/canva.png"
+    />
+
+    <ReviewCard
+      title="ElevenLabs"
+      description="Industry-leading AI voice generation."
+      category="AI Audio"
+      rating={4.9}
+      href="/reviews/elevenlabs"
+      logo="/images/tools/elevenlabs.png"
+    />
+
+    <ReviewCard
+      title="Claude"
+      description="Powerful AI assistant from Anthropic."
+      category="AI Chatbot"
+      rating={4.8}
+      href="/reviews/claude"
+      logo="/images/tools/claude.png"
+    />
+
+    <ReviewCard
+      title="Grammarly"
+      description="AI writing assistant for professionals."
+      category="Writing"
+      rating={4.7}
+      href="/reviews/grammarly"
+      logo="/images/tools/grammarly.png"
+    />
+
+  </div>
+
+</section>
+
+<Footer />
+
+</MainLayout>

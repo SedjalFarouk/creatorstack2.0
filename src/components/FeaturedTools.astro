@@ -1,0 +1,79 @@
+---
+import ToolCard from "./ToolCard.astro";
+---
+
+<section
+  id="featured"
+  class="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-28"
+>
+
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="text-center">
+
+      <span class="rounded-full bg-blue-100 px-5 py-2 text-sm font-bold text-blue-700">
+        ⭐ Editor's Picks
+      </span>
+
+      <h2 class="mt-8 text-5xl font-extrabold">
+
+        Featured AI Tools
+
+      </h2>
+
+      <p class="mx-auto mt-6 max-w-3xl text-xl leading-9 text-gray-600">
+
+        We personally test every AI tool before recommending it.
+        These are currently our highest-rated platforms.
+
+      </p>
+
+    </div>
+
+    <div class="mt-20 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+
+      <ToolCard
+        title="VEED"
+        logo="/images/tools/veed.png"
+        rating={4.8}
+        price="From $12/mo"
+        href="/reviews/veed"
+        description="Professional AI video editor with subtitles, templates, voiceovers and browser-based editing."
+      />
+
+      <ToolCard
+        title="ElevenLabs"
+        logo="/images/tools/elevenlabs.png"
+        rating={4.9}
+        price="From $5/mo"
+        href="#"
+        description="The industry leader in AI voice generation, cloning and multilingual speech."
+      />
+
+      <ToolCard
+        title="Canva AI"
+        logo="/images/tools/canva.png"
+        rating={4.7}
+        price="Free + Pro"
+        href="#"
+        description="Design graphics, presentations, documents and videos using powerful AI features."
+      />
+
+    </div>
+
+    <div class="mt-20 text-center">
+
+      <a
+        href="/reviews"
+        class="inline-flex rounded-2xl bg-blue-600 px-8 py-4 text-lg font-bold text-white transition hover:bg-blue-700"
+      >
+
+        Explore All Reviews →
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,57 @@
+---
+interface Props {
+  review: {
+    id: string;
+    title: string;
+    description: string;
+    category: string;
+    rating: number;
+    price: string;
+    pros: string[];
+    bestFor: string;
+  };
+}
+
+const { review } = Astro.props;
+---
+
+<a href={`/reviews/${review.id}`} class="block group">
+  <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full">
+    <div class="p-6">
+      <div class="flex items-start justify-between">
+        <span class="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+          {review.category}
+        </span>
+        <div class="flex items-center">
+          <span class="text-yellow-400 text-lg">★</span>
+          <span class="ml-1 text-sm font-semibold">{review.rating}</span>
+        </div>
+      </div>
+      
+      <h3 class="text-xl font-bold mt-4 group-hover:text-blue-600 transition-colors">
+        {review.title}
+      </h3>
+      
+      <p class="text-gray-600 mt-2 text-sm line-clamp-2">
+        {review.description}
+      </p>
+      
+      <div class="mt-4 flex items-center justify-between">
+        <span class="text-lg font-bold text-green-600">
+          {review.price}
+        </span>
+        <span class="text-sm text-gray-500">
+          {review.bestFor}
+        </span>
+      </div>
+      
+      <div class="mt-4 flex gap-2 flex-wrap">
+        {review.pros.slice(0, 2).map((pro: string) => (
+          <span class="text-xs bg-green-50 text-green-700 px-2 py-1 rounded-full">
+            ✅ {pro}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</a>

@@ -1,17 +1,38 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import TrendingTools from "../components/TrendingTools.astro";
+import Categories from "../components/Categories.astro";
+import FeaturedTools from "../components/FeaturedTools.astro";
+import WhyTrust from "../components/WhyTrust.astro";
+import LatestReviews from "../components/LatestReviews.astro";
+import PopularComparisons from "../components/PopularComparisons.astro";
+import Newsletter from "../components/Newsletter.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="CreatorStack">
+
+  <Header />
+
+  <Hero />
+
+  <TrendingTools />
+
+  <Categories />
+
+  <FeaturedTools />
+
+  <WhyTrust />
+
+  <LatestReviews />
+
+  <PopularComparisons />
+
+  <Newsletter />
+
+  <Footer />
+
+</MainLayout>

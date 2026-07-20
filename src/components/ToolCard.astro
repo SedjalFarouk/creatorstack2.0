@@ -1,0 +1,74 @@
+---
+interface Props{
+title:string;
+description:string;
+logo:string;
+rating:number;
+price:string;
+href:string;
+}
+
+const{
+title,
+description,
+logo,
+rating,
+price,
+href,
+}=Astro.props;
+---
+
+<a
+href={href}
+class="group block overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+>
+
+<div class="p-8">
+
+<div class="flex items-center justify-between">
+
+<img
+src={logo}
+alt={title}
+class="h-16 w-16 rounded-2xl object-contain"
+/>
+
+<div class="rounded-full bg-yellow-100 px-3 py-2 text-sm font-bold text-yellow-700">
+
+⭐ {rating}
+
+</div>
+
+</div>
+
+<h3 class="mt-8 text-2xl font-bold group-hover:text-blue-600">
+
+{title}
+
+</h3>
+
+<p class="mt-4 leading-8 text-gray-600">
+
+{description}
+
+</p>
+
+<div class="mt-8 flex items-center justify-between">
+
+<span class="font-bold text-blue-600">
+
+{price}
+
+</span>
+
+<span class="font-semibold">
+
+Read Review →
+
+</span>
+
+</div>
+
+</div>
+
+</a>

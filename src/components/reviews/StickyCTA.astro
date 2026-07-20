@@ -1,0 +1,38 @@
+---
+interface Props {
+  affiliateLink: string;
+}
+
+const { affiliateLink } = Astro.props;
+---
+
+<div
+  class="fixed bottom-6 left-1/2 z-50 w-[92%] max-w-md -translate-x-1/2 rounded-2xl bg-white p-3 shadow-2xl ring-1 ring-gray-200 backdrop-blur"
+>
+
+  <div class="flex items-center justify-between">
+
+    <div>
+
+      <p class="text-xs uppercase tracking-wide text-gray-500">
+        Ready to try VEED?
+      </p>
+
+      <p class="font-bold">
+        Start Free Today
+      </p>
+
+    </div>
+
+    <a
+      href={affiliateLink}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="rounded-xl bg-blue-600 px-6 py-3 font-bold text-white transition hover:bg-blue-700"
+    >
+      Visit VEED →
+    </a>
+
+  </div>
+
+</div>

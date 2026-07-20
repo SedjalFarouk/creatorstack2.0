@@ -1,0 +1,92 @@
+---
+interface Props {
+  pros: string[];
+  cons: string[];
+}
+
+const { pros, cons } = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl px-6 py-20">
+
+  <div class="grid gap-10 lg:grid-cols-2">
+
+    <!-- PROS -->
+
+    <div class="rounded-3xl border border-green-200 bg-green-50 p-10 shadow-lg">
+
+      <div class="mb-8 flex items-center gap-4">
+
+        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-3xl text-white">
+          ✓
+        </div>
+
+        <h2 class="text-3xl font-bold text-green-700">
+          Pros
+        </h2>
+
+      </div>
+
+      <ul class="space-y-6">
+
+        {pros.map((pro) => (
+
+          <li class="flex items-start gap-4">
+
+            <span class="mt-1 text-xl text-green-600">
+              ✔
+            </span>
+
+            <span class="leading-8 text-gray-700">
+              {pro}
+            </span>
+
+          </li>
+
+        ))}
+
+      </ul>
+
+    </div>
+
+    <!-- CONS -->
+
+    <div class="rounded-3xl border border-red-200 bg-red-50 p-10 shadow-lg">
+
+      <div class="mb-8 flex items-center gap-4">
+
+        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-3xl text-white">
+          ✕
+        </div>
+
+        <h2 class="text-3xl font-bold text-red-700">
+          Cons
+        </h2>
+
+      </div>
+
+      <ul class="space-y-6">
+
+        {cons.map((con) => (
+
+          <li class="flex items-start gap-4">
+
+            <span class="mt-1 text-xl text-red-600">
+              ✖
+            </span>
+
+            <span class="leading-8 text-gray-700">
+              {con}
+            </span>
+
+          </li>
+
+        ))}
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>

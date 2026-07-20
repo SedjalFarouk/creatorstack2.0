@@ -1,0 +1,87 @@
+---
+const {
+  tool1,
+  tool2,
+  features,
+} = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl px-6 pb-24">
+
+<h2 class="mb-10 text-center text-4xl font-bold">
+Feature Comparison
+</h2>
+
+<div class="overflow-x-auto rounded-3xl border bg-white shadow-sm">
+
+<table class="min-w-full">
+
+<thead class="bg-gray-100">
+
+<tr>
+
+<th class="px-8 py-5 text-left">
+Feature
+</th>
+
+<th class="px-8 py-5 text-center">
+{tool1}
+</th>
+
+<th class="px-8 py-5 text-center">
+{tool2}
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{
+features.map((feature:any)=>(
+
+<tr class="border-t">
+
+<td class="px-8 py-5 font-semibold">
+
+{feature.name}
+
+</td>
+
+<td class="text-center">
+
+{
+feature.tool1===true
+?"✔"
+:feature.tool1===false
+?"✖"
+:feature.tool1
+}
+
+</td>
+
+<td class="text-center">
+
+{
+feature.tool2===true
+?"✔"
+:feature.tool2===false
+?"✖"
+:feature.tool2
+}
+
+</td>
+
+</tr>
+
+))
+}
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
