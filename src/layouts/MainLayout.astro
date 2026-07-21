@@ -24,63 +24,60 @@ const {
 
 <html lang="en">
 
-
 <head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <link rel="manifest" href="/manifest.webmanifest" />
 
-<link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
 
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-<meta
-  name="theme-color"
-  content="#2563eb"
-/>
+  <meta
+    name="theme-color"
+    content="#2563eb"
+  />
 
-<meta name="google-site-verification" content="Duy_g2kyYu3488y6hiVyMGdKr5fNFUg-UhSFOBosKRE" />
+  <meta
+    name="google-site-verification"
+    content="Duy_g2kyYu3488y6hiVyMGdKr5fNFUg-UhSFOBosKRE"
+  />
 
-<meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
-/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link rel="manifest" href="/manifest.webmanifest" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <SEO
+    title={title}
+    description={description}
+    canonical={canonical}
+    image={image}
+  />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <OrganizationSchema />
 
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet"
-/>
-
-<SEO
-title={title}
-description={description}
-canonical={canonical}
-image={image}
-/>
-
-
-<OrganizationSchema />
-
-<WebsiteSchema />
+  <WebsiteSchema />
 
 </head>
 
 <body class="bg-gray-50 text-gray-900">
 
-<Header />
+  <Header />
 
-<main>
-
-<slot />
-
-</main>
+  <main>
+    <slot />
+  </main>
 
 </body>
 
