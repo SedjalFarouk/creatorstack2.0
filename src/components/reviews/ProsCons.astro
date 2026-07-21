@@ -7,83 +7,123 @@ interface Props {
 const { pros, cons } = Astro.props;
 ---
 
-<section class="mx-auto max-w-7xl px-6 py-20">
+<section class="bg-white py-24">
 
-  <div class="grid gap-10 lg:grid-cols-2">
+  <div class="mx-auto max-w-7xl px-6">
 
-    <!-- PROS -->
+    <div class="text-center">
 
-    <div class="rounded-3xl border border-green-200 bg-green-50 p-10 shadow-lg">
+      <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+        ⚖️ Pros & Cons
+      </span>
 
-      <div class="mb-8 flex items-center gap-4">
+      <h2 class="mt-6 text-5xl font-extrabold">
+        What We Loved & What Could Improve
+      </h2>
 
-        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-3xl text-white">
-          ✓
-        </div>
-
-        <h2 class="text-3xl font-bold text-green-700">
-          Pros
-        </h2>
-
-      </div>
-
-      <ul class="space-y-6">
-
-        {pros.map((pro) => (
-
-          <li class="flex items-start gap-4">
-
-            <span class="mt-1 text-xl text-green-600">
-              ✔
-            </span>
-
-            <span class="leading-8 text-gray-700">
-              {pro}
-            </span>
-
-          </li>
-
-        ))}
-
-      </ul>
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+        Every tool has strengths and weaknesses. Here's our honest assessment after extensive testing.
+      </p>
 
     </div>
 
-    <!-- CONS -->
+    <div class="mt-20 grid gap-10 lg:grid-cols-2">
 
-    <div class="rounded-3xl border border-red-200 bg-red-50 p-10 shadow-lg">
+      <!-- PROS -->
 
-      <div class="mb-8 flex items-center gap-4">
+      <div class="rounded-3xl border border-green-200 bg-green-50 p-10 shadow-sm">
 
-        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-3xl text-white">
-          ✕
+        <div class="flex items-center gap-4">
+
+          <div class="flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-3xl text-white">
+            👍
+          </div>
+
+          <div>
+
+            <h3 class="text-3xl font-bold text-green-700">
+              Pros
+            </h3>
+
+            <p class="text-green-600">
+              Things we genuinely liked.
+            </p>
+
+          </div>
+
         </div>
 
-        <h2 class="text-3xl font-bold text-red-700">
-          Cons
-        </h2>
+        <div class="mt-10 space-y-5">
+
+          {
+            pros.map((item) => (
+
+              <div class="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-sm">
+
+                <div class="text-green-600 text-2xl">
+                  ✔
+                </div>
+
+                <div class="font-medium">
+                  {item}
+                </div>
+
+              </div>
+
+            ))
+          }
+
+        </div>
 
       </div>
 
-      <ul class="space-y-6">
+      <!-- CONS -->
 
-        {cons.map((con) => (
+      <div class="rounded-3xl border border-red-200 bg-red-50 p-10 shadow-sm">
 
-          <li class="flex items-start gap-4">
+        <div class="flex items-center gap-4">
 
-            <span class="mt-1 text-xl text-red-600">
-              ✖
-            </span>
+          <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-3xl text-white">
+            👎
+          </div>
 
-            <span class="leading-8 text-gray-700">
-              {con}
-            </span>
+          <div>
 
-          </li>
+            <h3 class="text-3xl font-bold text-red-700">
+              Cons
+            </h3>
 
-        ))}
+            <p class="text-red-600">
+              Areas where VEED could improve.
+            </p>
 
-      </ul>
+          </div>
+
+        </div>
+
+        <div class="mt-10 space-y-5">
+
+          {
+            cons.map((item) => (
+
+              <div class="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-sm">
+
+                <div class="text-red-600 text-2xl">
+                  ✖
+                </div>
+
+                <div class="font-medium">
+                  {item}
+                </div>
+
+              </div>
+
+            ))
+          }
+
+        </div>
+
+      </div>
 
     </div>
 

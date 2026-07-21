@@ -1,122 +1,104 @@
-<section class="mx-auto max-w-7xl px-6 py-20">
+---
+const alternatives = [
+  {
+    name: "CapCut",
+    description: "Best free video editor with excellent mobile editing.",
+    rating: "4.7",
+    badge: "Best Free",
+    href: "#"
+  },
+  {
+    name: "Canva AI",
+    description: "Perfect for social media graphics and quick videos.",
+    rating: "4.8",
+    badge: "Best Design",
+    href: "#"
+  },
+  {
+    name: "Descript",
+    description: "Ideal for podcast editing and AI transcription.",
+    rating: "4.6",
+    badge: "Best Podcast",
+    href: "#"
+  }
+];
+---
 
-  <div class="text-center">
+<section class="bg-gray-50 py-24">
 
-    <span class="rounded-full bg-purple-100 px-4 py-2 text-sm font-bold text-purple-700">
-      Alternatives
-    </span>
+<div class="mx-auto max-w-7xl px-6">
 
-    <h2 class="mt-6 text-4xl font-extrabold">
-      Best VEED Alternatives
-    </h2>
+<div class="text-center">
 
-    <p class="mt-4 text-lg text-gray-600">
-      Depending on your workflow, these tools may be a better fit.
-    </p>
+<span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+🔥 Alternatives
+</span>
 
-  </div>
+<h2 class="mt-6 text-5xl font-extrabold">
+Best VEED Alternatives
+</h2>
 
-  <div class="mt-14 grid gap-8 md:grid-cols-3">
+<p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+If VEED isn't the perfect fit, these are our favorite alternatives.
+</p>
 
-    <!-- Card -->
+</div>
 
-    <div class="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+<div class="mt-20 grid gap-8 lg:grid-cols-3">
 
-      <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100 text-5xl">
-        🎥
-      </div>
+{
+alternatives.map(tool => (
 
-      <h3 class="text-2xl font-bold">
-        CapCut
-      </h3>
+<div class="rounded-3xl border bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
 
-      <p class="mt-4 leading-8 text-gray-600">
-        Excellent free editor for TikTok and short-form creators.
-      </p>
+<div class="flex justify-between items-center">
 
-      <div class="mt-6">
+<h3 class="text-2xl font-bold">
 
-        <span class="rounded-full bg-green-100 px-3 py-2 text-sm font-bold text-green-700">
-          Best Free Option
-        </span>
+{tool.name}
 
-      </div>
+</h3>
 
-      <a
-        href="/reviews/capcut"
-        class="mt-8 inline-flex font-bold text-blue-600"
-      >
-        Read Review →
-      </a>
+<span class="rounded-full bg-blue-600 px-3 py-1 text-white text-sm">
 
-    </div>
+{tool.badge}
 
-    <!-- Card -->
+</span>
 
-    <div class="rounded-3xl border-2 border-blue-600 bg-white p-8 shadow-2xl">
+</div>
 
-      <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-100 text-5xl">
-        🎨
-      </div>
+<p class="mt-6 text-gray-600">
 
-      <h3 class="text-2xl font-bold">
-        Canva AI
-      </h3>
+{tool.description}
 
-      <p class="mt-4 leading-8 text-gray-600">
-        Best for social media graphics, presentations and quick videos.
-      </p>
+</p>
 
-      <div class="mt-6">
+<div class="mt-8 flex justify-between">
 
-        <span class="rounded-full bg-blue-100 px-3 py-2 text-sm font-bold text-blue-700">
-          Best for Marketing
-        </span>
+<span class="font-bold text-blue-600">
 
-      </div>
+⭐ {tool.rating}/5
 
-      <a
-        href="/reviews/canva"
-        class="mt-8 inline-flex font-bold text-blue-600"
-      >
-        Read Review →
-      </a>
+</span>
 
-    </div>
+<a
+href={tool.href}
+class="font-semibold text-blue-600 hover:underline"
+>
 
-    <!-- Card -->
+Read Review →
 
-    <div class="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+</a>
 
-      <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100 text-5xl">
-        🚀
-      </div>
+</div>
 
-      <h3 class="text-2xl font-bold">
-        Runway
-      </h3>
+</div>
 
-      <p class="mt-4 leading-8 text-gray-600">
-        Advanced AI video generation for professionals.
-      </p>
+))
+}
 
-      <div class="mt-6">
+</div>
 
-        <span class="rounded-full bg-purple-100 px-3 py-2 text-sm font-bold text-purple-700">
-          Best AI Generation
-        </span>
-
-      </div>
-
-      <a
-        href="/reviews/runway"
-        class="mt-8 inline-flex font-bold text-blue-600"
-      >
-        Read Review →
-      </a>
-
-    </div>
-
-  </div>
+</div>
 
 </section>

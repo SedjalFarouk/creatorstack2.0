@@ -1,62 +1,85 @@
 ---
 const screenshots = [
   {
-    title: "VEED Dashboard",
-    image: "/images/reviews/veed/dashboard.webp",
+    image: "/images/screenshots/veed-editor.jpg",
+    title: "Video Editor"
   },
   {
-    title: "Video Editor",
-    image: "/images/reviews/veed/editor.webp",
+    image: "/images/screenshots/veed-subtitles.jpg",
+    title: "AI Subtitles"
   },
   {
-    title: "AI Subtitles",
-    image: "/images/reviews/veed/subtitles.webp",
+    image: "/images/screenshots/veed-templates.jpg",
+    title: "Templates"
   },
   {
-    title: "Templates",
-    image: "/images/reviews/veed/templates.webp",
-  },
+    image: "/images/screenshots/veed-export.jpg",
+    title: "Export Settings"
+  }
 ];
 ---
 
-<section class="mx-auto max-w-7xl px-6 py-20">
+<section class="bg-gray-50 py-24">
 
-  <div class="mb-12 text-center">
+  <div class="mx-auto max-w-7xl px-6">
 
-    <h2 class="text-4xl font-bold">
-      VEED Interface
-    </h2>
+    <div class="text-center">
 
-    <p class="mt-4 text-lg text-gray-600">
-      A quick look at the editor and its AI features.
-    </p>
+      <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+        🖼 Screenshots
+      </span>
 
-  </div>
+      <h2 class="mt-6 text-5xl font-extrabold">
+        Take a Look Inside VEED
+      </h2>
 
-  <div class="grid gap-8 md:grid-cols-2">
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+        These screenshots show the interface we tested during our hands-on review.
+      </p>
 
-    {screenshots.map((shot) => (
+    </div>
 
-      <div class="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+    <!-- Featured Screenshot -->
 
-        <img
-          src={shot.image}
-          alt={shot.title}
-          class="w-full object-cover"
-          loading="lazy"
-        />
+    <div class="mt-20 overflow-hidden rounded-3xl border bg-white shadow-xl">
 
-        <div class="p-5">
+      <img
+        src="/images/screenshots/veed-editor.jpg"
+        alt="VEED Editor"
+        class="w-full transition duration-500 hover:scale-105"
+      />
 
-          <h3 class="text-xl font-bold">
-            {shot.title}
-          </h3>
+    </div>
 
-        </div>
+    <!-- Gallery -->
 
-      </div>
+    <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-    ))}
+      {
+        screenshots.map((shot) => (
+
+          <div class="group overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
+
+            <img
+              src={shot.image}
+              alt={shot.title}
+              class="h-56 w-full object-cover transition duration-500 group-hover:scale-110"
+            />
+
+            <div class="p-5">
+
+              <h3 class="font-semibold">
+                {shot.title}
+              </h3>
+
+            </div>
+
+          </div>
+
+        ))
+      }
+
+    </div>
 
   </div>
 

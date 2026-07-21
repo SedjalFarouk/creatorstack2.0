@@ -1,67 +1,60 @@
 ---
-interface Props {
-  buttonText: string;
-  affiliateLink: string;
+interface Props{
+buttonText:string;
+affiliateLink:string;
 }
 
-const { buttonText, affiliateLink } = Astro.props;
+const {buttonText,affiliateLink}=Astro.props;
 ---
 
-<section id="affiliate" class="mx-auto max-w-6xl px-6 py-24">
+<section class="py-24">
 
-  <div class="overflow-hidden rounded-[32px] bg-gradient-to-r from-blue-600 to-blue-800 p-12 text-center text-white shadow-2xl">
+<div class="mx-auto max-w-5xl px-6">
 
-    <span class="rounded-full bg-white/20 px-5 py-2 text-sm font-bold">
-      Recommended by CreatorStack
-    </span>
+<div class="rounded-[40px] bg-gradient-to-r from-blue-600 to-indigo-700 p-16 text-center text-white shadow-2xl">
 
-    <h2 class="mt-8 text-5xl font-extrabold">
+<div class="text-6xl">
 
-      Ready to Try VEED?
+🚀
 
-    </h2>
+</div>
 
-    <p class="mx-auto mt-8 max-w-3xl text-xl leading-9 text-blue-100">
+<h2 class="mt-8 text-5xl font-extrabold">
 
-      If you're looking for one of the easiest AI video editors available today,
-      VEED is an excellent choice for creators, marketers and businesses.
+Ready to Try VEED?
 
-    </p>
+</h2>
 
-    <div class="mt-12">
+<p class="mx-auto mt-6 max-w-2xl text-xl text-blue-100">
 
-      <a
-        href={affiliateLink}
-        target="_blank"
-        rel="nofollow sponsored noopener"
-        class="inline-flex items-center rounded-2xl bg-white px-10 py-5 text-xl font-bold text-blue-700 transition hover:scale-105"
-      >
+If you're looking for one of the easiest AI video editors available today, VEED is an excellent choice for creators, marketers and businesses.
 
-        🚀 {buttonText}
+</p>
 
-      </a>
+<a
 
-    </div>
+href={affiliateLink}
 
-    <div class="mt-10 flex flex-wrap justify-center gap-8 text-sm font-semibold text-blue-100">
+target="_blank"
 
-      <span>✅ Free Plan</span>
+rel="nofollow sponsored noopener"
 
-      <span>✅ No Credit Card Required</span>
+class="mt-10 inline-block rounded-2xl bg-white px-10 py-5 text-xl font-bold text-blue-700 transition hover:scale-105"
 
-      <span>✅ Cancel Anytime</span>
+>
 
-      <span>✅ Trusted by Millions</span>
+{buttonText}
 
-    </div>
+</a>
 
-    <p class="mt-8 text-sm text-blue-200">
+<p class="mt-6 text-sm text-blue-200">
 
-      Affiliate Disclosure: We may earn a commission if you purchase through our link,
-      at no additional cost to you.
+This helps support CreatorStack at no extra cost to you ❤️
 
-    </p>
+</p>
 
-  </div>
+</div>
+
+</div>
 
 </section>

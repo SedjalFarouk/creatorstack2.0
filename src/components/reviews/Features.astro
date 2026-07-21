@@ -1,100 +1,92 @@
-<section class="mx-auto max-w-7xl px-6 py-20">
+---
+const features = [
+  {
+    icon: "🎬",
+    title: "AI Video Editing",
+    description: "Edit videos directly in your browser with powerful AI assistance."
+  },
+  {
+    icon: "🎙️",
+    title: "AI Voice Generator",
+    description: "Generate realistic voiceovers in multiple languages."
+  },
+  {
+    icon: "📝",
+    title: "Auto Subtitles",
+    description: "Automatically create subtitles with excellent accuracy."
+  },
+  {
+    icon: "🌍",
+    title: "Video Translation",
+    description: "Translate subtitles and voiceovers into dozens of languages."
+  },
+  {
+    icon: "🎨",
+    title: "Templates",
+    description: "Hundreds of ready-to-use templates for social media."
+  },
+  {
+    icon: "🤖",
+    title: "AI Avatars",
+    description: "Create professional AI presenters without recording yourself."
+  },
+  {
+    icon: "📺",
+    title: "Screen Recorder",
+    description: "Record your screen, webcam or both in one click."
+  },
+  {
+    icon: "☁️",
+    title: "Cloud Based",
+    description: "No downloads required. Everything works directly online."
+  }
+];
+---
 
-  <div class="text-center">
+<section class="bg-white py-24">
 
-    <h2 class="text-4xl font-bold">
-      Key Features
-    </h2>
+  <div class="mx-auto max-w-7xl px-6">
 
-    <p class="mt-4 text-lg text-gray-600">
-      Everything you need to create professional videos with AI.
-    </p>
+    <div class="text-center">
 
-  </div>
+      <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+        ✨ Features
+      </span>
 
-  <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <h2 class="mt-6 text-5xl font-extrabold">
+        Everything You Need to Create Videos
+      </h2>
 
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
-
-      <div class="mb-6 text-5xl">🎬</div>
-
-      <h3 class="text-2xl font-bold">
-        AI Video Editor
-      </h3>
-
-      <p class="mt-4 leading-8 text-gray-600">
-        Edit videos directly in your browser with a fast and intuitive timeline.
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+        VEED combines AI tools, video editing, collaboration and publishing into
+        one modern platform.
       </p>
 
     </div>
 
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+    <div class="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
 
-      <div class="mb-6 text-5xl">📝</div>
+      {
+        features.map((feature) => (
 
-      <h3 class="text-2xl font-bold">
-        Auto Subtitles
-      </h3>
+          <div class="group rounded-3xl border bg-white p-8 transition duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
 
-      <p class="mt-4 leading-8 text-gray-600">
-        Generate highly accurate subtitles in seconds with AI.
-      </p>
+            <div class="text-5xl">
+              {feature.icon}
+            </div>
 
-    </div>
+            <h3 class="mt-6 text-2xl font-bold group-hover:text-blue-600">
+              {feature.title}
+            </h3>
 
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+            <p class="mt-4 leading-7 text-gray-600">
+              {feature.description}
+            </p>
 
-      <div class="mb-6 text-5xl">🎤</div>
+          </div>
 
-      <h3 class="text-2xl font-bold">
-        AI Voiceovers
-      </h3>
-
-      <p class="mt-4 leading-8 text-gray-600">
-        Create natural sounding voiceovers without recording your own voice.
-      </p>
-
-    </div>
-
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
-
-      <div class="mb-6 text-5xl">📺</div>
-
-      <h3 class="text-2xl font-bold">
-        Screen Recorder
-      </h3>
-
-      <p class="mt-4 leading-8 text-gray-600">
-        Capture your screen, webcam or both directly from your browser.
-      </p>
-
-    </div>
-
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
-
-      <div class="mb-6 text-5xl">✨</div>
-
-      <h3 class="text-2xl font-bold">
-        Templates
-      </h3>
-
-      <p class="mt-4 leading-8 text-gray-600">
-        Hundreds of professionally designed templates for social media and marketing.
-      </p>
-
-    </div>
-
-    <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
-
-      <div class="mb-6 text-5xl">🚀</div>
-
-      <h3 class="text-2xl font-bold">
-        Fast Export
-      </h3>
-
-      <p class="mt-4 leading-8 text-gray-600">
-        Export videos quickly in high quality without installing software.
-      </p>
+        ))
+      }
 
     </div>
 

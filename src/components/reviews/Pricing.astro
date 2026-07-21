@@ -7,129 +7,139 @@ interface Props {
 const { price, website } = Astro.props;
 ---
 
-<section id="pricing" class="mx-auto max-w-7xl px-6 py-24">
+<section id="pricing" class="bg-gray-50 py-24">
 
-  <div class="text-center">
+  <div class="mx-auto max-w-7xl px-6">
 
-    <span class="rounded-full bg-blue-100 px-5 py-2 text-sm font-bold text-blue-700">
-      💰 Pricing
-    </span>
+    <div class="text-center">
 
-    <h2 class="mt-8 text-5xl font-extrabold">
-      VEED Pricing Plans
-    </h2>
+      <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+        💰 Pricing
+      </span>
 
-    <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
-      VEED offers flexible plans for beginners, creators, professionals and businesses.
-    </p>
+      <h2 class="mt-6 text-5xl font-extrabold">
+        Which VEED Plan Should You Choose?
+      </h2>
 
-  </div>
-
-  <div class="mt-20 grid gap-8 lg:grid-cols-3">
-
-    <!-- FREE -->
-
-    <div class="rounded-3xl border bg-white p-10 shadow-lg">
-
-      <h3 class="text-2xl font-bold">
-        Free
-      </h3>
-
-      <div class="mt-6 text-5xl font-extrabold">
-        $0
-      </div>
-
-      <ul class="mt-8 space-y-4 text-gray-600">
-
-        <li>✅ Basic Editing</li>
-        <li>✅ AI Subtitles</li>
-        <li>✅ Watermarked Exports</li>
-        <li>✅ Limited AI Features</li>
-
-      </ul>
-
-    </div>
-
-    <!-- PRO -->
-
-    <div class="relative rounded-3xl border-2 border-blue-600 bg-blue-600 p-10 text-white shadow-2xl scale-105">
-
-      <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-
-        <span class="rounded-full bg-yellow-400 px-5 py-2 text-sm font-bold text-black">
-
-          ⭐ Most Popular
-
-        </span>
-
-      </div>
-
-      <h3 class="mt-4 text-2xl font-bold">
-
-        Pro
-
-      </h3>
-
-      <div class="mt-6 text-5xl font-extrabold">
-
-        {price}
-
-      </div>
-
-      <ul class="mt-8 space-y-4">
-
-        <li>✅ Unlimited Projects</li>
-        <li>✅ Premium Templates</li>
-        <li>✅ AI Video Generator</li>
-        <li>✅ Brand Kit</li>
-        <li>✅ No Watermark</li>
-
-      </ul>
-
-      <a
-        href={website}
-        target="_blank"
-        rel="nofollow sponsored noopener"
-        class="mt-10 block rounded-2xl bg-white py-5 text-center text-lg font-bold text-blue-600 transition hover:scale-105"
-      >
-
-        🚀 Try VEED
-
-      </a>
-
-      <p class="mt-5 text-center text-sm text-blue-100">
-
-        No credit card required for the free plan.
-
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-600">
+        Whether you're just getting started or managing a professional content
+        team, VEED has a plan that fits your workflow.
       </p>
 
     </div>
 
-    <!-- BUSINESS -->
+    <div class="mt-20 grid gap-8 lg:grid-cols-3">
 
-    <div class="rounded-3xl border bg-white p-10 shadow-lg">
+      <!-- FREE -->
 
-      <h3 class="text-2xl font-bold">
+      <div class="rounded-3xl border bg-white p-10 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-        Business
+        <div class="text-center">
 
-      </h3>
+          <div class="text-2xl font-bold">
+            Free
+          </div>
 
-      <div class="mt-6 text-5xl font-extrabold">
+          <div class="mt-6 text-6xl font-extrabold">
+            $0
+          </div>
 
-        Custom
+          <p class="mt-4 text-gray-500">
+            Perfect for trying VEED.
+          </p>
+
+        </div>
+
+        <ul class="mt-10 space-y-4">
+
+          <li>✅ Basic Video Editor</li>
+          <li>✅ AI Subtitles</li>
+          <li>✅ Screen Recorder</li>
+          <li>❌ Watermark Removal</li>
+          <li>❌ Premium AI Tools</li>
+
+        </ul>
 
       </div>
 
-      <ul class="mt-8 space-y-4 text-gray-600">
+      <!-- PRO -->
 
-        <li>✅ Team Workspace</li>
-        <li>✅ Shared Assets</li>
-        <li>✅ Collaboration</li>
-        <li>✅ Priority Support</li>
-        <li>✅ Enterprise Security</li>
+      <div class="relative rounded-3xl border-2 border-blue-600 bg-white p-10 shadow-2xl scale-105">
 
-      </ul>
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-6 py-2 text-sm font-bold text-white">
+          ⭐ MOST POPULAR
+        </div>
+
+        <div class="text-center">
+
+          <div class="text-2xl font-bold">
+            Pro
+          </div>
+
+          <div class="mt-6 text-6xl font-extrabold text-blue-600">
+            {price}
+          </div>
+
+          <p class="mt-4 text-gray-500">
+            Best value for creators.
+          </p>
+
+        </div>
+
+        <ul class="mt-10 space-y-4">
+
+          <li>✅ Unlimited Projects</li>
+          <li>✅ AI Avatars</li>
+          <li>✅ Premium Templates</li>
+          <li>✅ Remove Watermarks</li>
+          <li>✅ Brand Kit</li>
+          <li>✅ Priority Rendering</li>
+
+        </ul>
+
+        <a
+          id="affiliate"
+          href={website}
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="mt-10 block rounded-2xl bg-blue-600 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-700"
+        >
+          🚀 Start Using VEED
+        </a>
+
+      </div>
+
+      <!-- BUSINESS -->
+
+      <div class="rounded-3xl border bg-white p-10 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+        <div class="text-center">
+
+          <div class="text-2xl font-bold">
+            Business
+          </div>
+
+          <div class="mt-6 text-6xl font-extrabold">
+            Custom
+          </div>
+
+          <p class="mt-4 text-gray-500">
+            Built for teams.
+          </p>
+
+        </div>
+
+        <ul class="mt-10 space-y-4">
+
+          <li>✅ Team Workspace</li>
+          <li>✅ Shared Brand Assets</li>
+          <li>✅ Collaboration</li>
+          <li>✅ Enterprise Security</li>
+          <li>✅ Dedicated Support</li>
+
+        </ul>
+
+      </div>
 
     </div>
 
