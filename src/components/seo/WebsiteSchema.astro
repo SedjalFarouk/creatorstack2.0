@@ -1,0 +1,30 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+
+  "@type": "WebSite",
+
+  name: "CreatorStack",
+
+  url: "https://creatorstack2-0.pages.dev",
+
+  description:
+    "CreatorStack helps creators discover the best AI tools through reviews, comparisons and buying guides.",
+
+  potentialAction: {
+
+    "@type": "SearchAction",
+
+    target:
+      "https://creatorstack2-0.pages.dev/search?q={search_term_string}",
+
+    "query-input":
+      "required name=search_term_string"
+  }
+};
+---
+
+<script
+type="application/ld+json"
+set:html={JSON.stringify(schema)}
+/>

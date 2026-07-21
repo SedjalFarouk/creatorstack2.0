@@ -1,0 +1,59 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  url: string;
+  image: string;
+  rating: number;
+  author: string;
+  datePublished: string;
+}
+
+const {
+  name,
+  description,
+  url,
+  image,
+  rating,
+  author,
+  datePublished,
+} = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Review",
+
+  itemReviewed: {
+    "@type": "SoftwareApplication",
+    name: name,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    image: image,
+    url: url,
+  },
+
+  reviewRating: {
+    "@type": "Rating",
+    ratingValue: rating,
+    bestRating: 5,
+    worstRating: 1,
+  },
+
+  author: {
+    "@type": "Person",
+    name: author,
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "CreatorStack",
+    url: "https://creatorstack2-0.pages.dev",
+  },
+
+  reviewBody: description,
+
+  datePublished: datePublished,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

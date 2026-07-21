@@ -1,36 +1,84 @@
 ---
 import "../styles/global.css";
 import Header from "../components/Header.astro";
+import SEO from "../components/seo/SEO.astro";
+import OrganizationSchema from "../components/seo/OrganizationSchema.astro";
+import WebsiteSchema from "../components/seo/WebsiteSchema.astro";
 
 interface Props {
   title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
 }
 
-const { title = "CreatorStack" } = Astro.props;
+const {
+  title = "CreatorStack | Discover the Best AI Tools",
+  description = "CreatorStack helps creators discover the best AI tools through in-depth reviews, comparisons and buying guides.",
+  canonical = Astro.url.href,
+  image = "/images/og-default.jpg",
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<meta
+  name="theme-color"
+  content="#2563eb"
+/>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<link rel="manifest" href="/manifest.webmanifest" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet"
 />
 
-<title>{title}</title>
-  </head>
+<SEO
+title={title}
+description={description}
+canonical={canonical}
+image={image}
+/>
 
-  <body class="bg-gray-50 text-gray-900">
-    <Header />
 
-    <main>
-      <slot />
-    </main>
-  </body>
+<OrganizationSchema />
+
+<WebsiteSchema />
+
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+<Header />
+
+<main>
+
+<slot />
+
+</main>
+
+</body>
+
 </html>
