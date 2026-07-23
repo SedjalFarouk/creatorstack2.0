@@ -24,7 +24,8 @@ import Alternatives from "../../components/reviews/Alternatives.astro";
 import FAQ from "../../components/reviews/FAQ.astro";
 import LastUpdated from "../../components/reviews/LastUpdated.astro";
 import ReviewSchema from "../../components/seo/ReviewSchema.astro";
-import BreadcrumbSchema from "../../components/seo/BreadcrumbSchema.astro";  
+import BreadcrumbSchema from "../../components/seo/BreadcrumbSchema.astro"; 
+import FullReview from "../../components/reviews/FullReview.astro"; 
 ---
 
 <MainLayout
@@ -112,6 +113,8 @@ bestFor={[
   />
 
   <Features />
+
+  <FullReview />
 
   <ScoreBreakdown />
 

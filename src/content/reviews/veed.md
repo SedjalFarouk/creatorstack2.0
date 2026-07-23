@@ -1,48 +1,59 @@
 ---
-toolName: "VEED"
-slug: "veed"
+title: VEED Review 2026
 
-title: "VEED Review 2026"
-description: "An in-depth review of VEED AI Video Editor."
-category: "AI Video"
+slug: veed
+
+description: Hands-on review of VEED AI Video Editor.
+
+category: AI Video
+
+logo: /images/tools/veed.png
+
+featuredImage: /images/og/veed-review.jpg
 
 rating: 4.8
-price: "From $12/month"
+
+price: From $12/month
+
+affiliate: https://YOUR-AFFILIATE-LINK
+
+author: Farouk Sedjal
+
+published: 2026-07-20
+
+updated: 2026-07-23
 
 featured: true
 
-website: "https://veed.io"
-
-logo: "/images/tools/veed.png"
-
-publishedDate: 2026-07-17
-
 pros:
-  - Easy to use
+  - Extremely beginner-friendly
   - Excellent AI subtitles
-  - Browser-based
-  - Fast exports
+  - Fast cloud editor
+  - Great templates
+  - AI avatars
 
 cons:
-  - Limited free plan
-  - Some AI features require a paid plan
+  - Watermark on free plan
+  - Premium AI requires subscription
   - Internet connection required
 
 bestFor:
   - YouTubers
-  - Content Creators
-  - Freelancers
+  - TikTok Creators
   - Marketing Teams
+  - Freelancers
 ---
 
-# VEED Review
+## Introduction
 
-VEED is one of the best browser-based AI video editors available today.
+This is where the full 2500-word review will go.
 
-## Overview
+You can write using normal Markdown.
 
-VEED combines video editing, AI subtitles, screen recording and collaboration tools into a single web application.
+### Heading
 
-## Final Verdict
+Paragraph...
 
-VEED is an excellent choice for creators looking for an intuitive AI video editor.
+### Another Heading
+
+Paragraph...
