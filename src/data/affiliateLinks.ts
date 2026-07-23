@@ -1,5 +1,5 @@
 export const affiliateLinks = {
-  veed: "https://www.veed.io/",
+  veed: "https://veed.cello.so/PjL23Afup16",
 
   chatgpt: "#",
 

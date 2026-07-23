@@ -26,6 +26,9 @@ import LastUpdated from "../../components/reviews/LastUpdated.astro";
 import ReviewSchema from "../../components/seo/ReviewSchema.astro";
 import BreadcrumbSchema from "../../components/seo/BreadcrumbSchema.astro"; 
 import FullReview from "../../components/reviews/FullReview.astro"; 
+import RecommendationBox from "../../components/reviews/RecommendationBox.astro";
+import ReviewScoreCard from "../../components/reviews/ReviewScoreCard.astro";
+import RelatedReviews from "../../components/reviews/RelatedReviews.astro";
 ---
 
 <MainLayout
@@ -78,6 +81,8 @@ url:"https://creatorstack2-0.pages.dev/reviews/veed"
     summary="VEED is one of the easiest AI video editors for creators, marketers and businesses."
   />
 
+  <RecommendationBox />
+
   <ProsCons
     pros={[
 "Extremely beginner-friendly interface",
@@ -95,6 +100,8 @@ url:"https://creatorstack2-0.pages.dev/reviews/veed"
 "Some exports can be slow on large projects",
 ]}
   />
+
+  <ReviewScoreCard />
 
   <BestFor
 bestFor={[
@@ -138,6 +145,8 @@ bestFor={[
   <StickyCTA
     affiliateLink={affiliateLinks.veed}
   />
+
+  <RelatedReviews />
 
   <Footer />
 

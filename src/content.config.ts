@@ -18,7 +18,7 @@ const reviews = defineCollection({
 
     price: z.string(),
 
-    affiliate: z.string(),
+    affiliateKey: z.string(),
 
     author: z.string(),
 

@@ -15,7 +15,7 @@ rating: 4.8
 
 price: From $12/month
 
-affiliate: https://YOUR-AFFILIATE-LINK
+affiliateKey: veed
 
 author: Farouk Sedjal
 
