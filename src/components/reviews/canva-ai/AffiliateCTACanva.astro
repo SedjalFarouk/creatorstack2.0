@@ -1,0 +1,58 @@
+---
+interface Props {
+  affiliateLink: string;
+  buttonText?: string;
+}
+
+const {
+  affiliateLink,
+  buttonText = "Start Using Canva AI",
+} = Astro.props;
+---
+
+<section class="py-24">
+
+  <div class="mx-auto max-w-5xl px-6">
+
+    <div class="rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 p-12 text-center text-white shadow-2xl">
+
+      <span class="rounded-full bg-white/20 px-4 py-2 text-sm font-semibold">
+        🎨 CreatorStack Recommendation
+      </span>
+
+      <h2 class="mt-6 text-5xl font-extrabold">
+        Ready to Try Canva AI?
+      </h2>
+
+      <p class="mx-auto mt-6 max-w-3xl text-xl leading-8 text-blue-100">
+
+        Canva AI combines design, AI writing, image generation,
+        presentations and video editing into one easy-to-use platform.
+
+      </p>
+
+      <div class="mt-6 inline-flex rounded-full bg-green-500 px-6 py-3 text-lg font-bold text-white">
+
+        🎉 Exclusive Offer:
+        Get <strong class="mx-1">50% OFF</strong>
+        your first 3 months.
+
+      </div>
+
+      <a
+        href={affiliateLink}
+        target="_blank"
+        rel="nofollow sponsored noopener"
+        onclick="trackAffiliateClick('Canva AI','Final CTA')"
+        class="mt-10 inline-flex rounded-2xl bg-white px-10 py-5 text-xl font-bold text-blue-700 transition hover:scale-105"
+      >
+
+        {buttonText} →
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>

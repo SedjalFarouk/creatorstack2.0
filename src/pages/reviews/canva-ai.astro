@@ -25,16 +25,17 @@ import FAQ from "../../components/reviews/canva-ai/FAQ.astro";
 import FinalVerdict from "../../components/reviews/canva-ai/FinalVerdict.astro";
 import HowWeTested from "../../components/reviews/canva-ai/HowWeTested.astro";
 
-import AffiliateCTA from "../../components/reviews/AffiliateCTA.astro";
+
 import StickyCTA from "../../components/reviews/StickyCTA.astro";
 import LastUpdated from "../../components/reviews/LastUpdated.astro";
 
 import ReviewSchema from "../../components/seo/ReviewSchema.astro";
 import BreadcrumbSchema from "../../components/seo/BreadcrumbSchema.astro";
-import BestFor from "../../components/reviews/BestFor.astro";
-import FullReview from "../../components/reviews/FullReview.astro";
+
+
 import RelatedReviews from "../../components/reviews/RelatedReviews.astro";
 import TableOfContents from "../../components/reviews/TableOfContents.astro";
+import AffiliateCTACanva from "../../components/reviews/canva-ai/AffiliateCTACanva.astro";
 ---
 
 <MainLayout
@@ -72,6 +73,7 @@ url:"https://creatorstack2-0.pages.dev/reviews/canva-ai"
 />
 
   <AffiliateDisclosure />
+
   <TableOfContents />
 
   <LastUpdated date="July 23, 2026" />
@@ -84,7 +86,7 @@ rating={4.9}
 logo="/images/tools/canva-ai.png"
 />
 
-<section class="mx-auto max-w-7xl px-6 py-16">
+<section id="overview" class="mx-auto max-w-7xl px-6 py-16">
 
 <div class="rounded-3xl border bg-white p-10 shadow-sm">
 
@@ -120,7 +122,7 @@ switching between multiple applications.
 </div>
 
 </section>
-<section class="mx-auto max-w-7xl px-6 py-16">
+<section id="features" class="mx-auto max-w-7xl px-6 py-16">
 
 <h2 class="text-4xl font-bold">
 Why Millions of People Use Canva AI
@@ -1019,22 +1021,11 @@ summary="Canva AI combines powerful AI tools with one of the easiest design plat
 ]}
   />
 
-  <BestFor
-bestFor={[
-  "Content Creators",
-  "YouTubers",
-  "Students",
-  "Small Businesses",
-  "Marketing Teams",
-  "Social Media Managers",
-]}
-/>
+
   <Pricing
 price="From $15/month"
 website={affiliateLinks.canva}
 />
-
-  <FullReview />
 
   <section class="mx-auto max-w-7xl px-6 py-16">
 
@@ -1316,8 +1307,14 @@ See which AI design platform is right for you.
 </div>
 
 </section>
+
   <FinalVerdict />
- <AffiliateCTA
+
+  <AffiliateCTACanva
+buttonText="Start Using Canva AI"
+affiliateLink={affiliateLinks.canva}
+/>
+
 buttonText="Start Using Canva AI"
 affiliateLink={affiliateLinks.canva}
 />
