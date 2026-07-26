@@ -1,27 +1,37 @@
 ---
-interface Props{
-affiliateLink:string;
+interface Props {
+  affiliateLink: string;
 }
 
-const {affiliateLink}=Astro.props;
+const { affiliateLink } = Astro.props;
 ---
 
 <div class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2">
 
-<a
+  <a
+    href={affiliateLink}
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    onclick="trackAffiliateClick('VEED','Sticky CTA')"
+    class="flex items-center gap-4 rounded-full bg-green-600 px-6 py-4 text-white shadow-2xl transition hover:scale-105 hover:bg-green-700"
+  >
 
-href={affiliateLink}
+    <div class="text-3xl">
+      🎉
+    </div>
 
-target="_blank"
+    <div class="text-left leading-tight">
 
-rel="nofollow sponsored noopener"
+      <div class="text-lg font-bold">
+        Claim 50% OFF
+      </div>
 
-class="rounded-full bg-blue-600 px-8 py-4 font-bold text-white shadow-2xl transition hover:scale-105 hover:bg-blue-700"
+      <div class="text-sm opacity-90">
+        First 3 Months
+      </div>
 
->
+    </div>
 
-🚀 Try VEED Free
-
-</a>
+  </a>
 
 </div>

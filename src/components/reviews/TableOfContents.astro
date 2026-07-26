@@ -1,0 +1,46 @@
+---
+
+const items = [
+["overview","Overview"],
+["features","Features"],
+["pricing","Pricing"],
+["proscons","Pros & Cons"],
+["alternatives","Alternatives"],
+["faq","FAQ"],
+["verdict","Final Verdict"],
+];
+
+---
+
+<aside class="hidden xl:block fixed top-36 right-8 w-64">
+
+<div class="rounded-3xl border bg-white p-6 shadow-xl">
+
+<h3 class="font-bold text-xl mb-4">
+Contents
+</h3>
+
+<ul class="space-y-3">
+
+{
+items.map(([id,label])=>(
+<li>
+
+<a
+href={`#${id}`}
+class="text-gray-600 hover:text-blue-600"
+>
+
+{label}
+
+</a>
+
+</li>
+))
+}
+
+</ul>
+
+</div>
+
+</aside>

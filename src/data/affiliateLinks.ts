@@ -5,7 +5,7 @@ export const affiliateLinks = {
 
   elevenlabs: "#",
 
-  canva: "#",
+  canva: "YOUR_CANVA_AFFILIATE_LINK",
 
   runway: "#",
 
