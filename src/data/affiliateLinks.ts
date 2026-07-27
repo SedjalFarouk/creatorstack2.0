@@ -10,4 +10,6 @@ export const affiliateLinks = {
   runway: "#",
 
   claude: "#",
+
+  kimi: "https://kimi.com",
 };

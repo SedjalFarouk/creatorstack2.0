@@ -1,0 +1,179 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Footer from "../../components/Footer.astro";
+
+// Kimi Components
+import ReviewHero from "../../components/reviews/kimi-ai/ReviewHero.astro";
+import QuickSpecs from "../../components/reviews/kimi-ai/QuickSpecs.astro";
+import HowWeTested from "../../components/reviews/kimi-ai/HowWeTested.astro";
+import Features from "../../components/reviews/kimi-ai/Features.astro";
+import Screenshots from "../../components/reviews/kimi-ai/Screenshots.astro";
+import Pricing from "../../components/reviews/kimi-ai/Pricing.astro";
+import RecommendationBox from "../../components/reviews/kimi-ai/RecommendationBox.astro";
+import FAQ from "../../components/reviews/kimi-ai/FAQ.astro";
+import FinalVerdict from "../../components/reviews/kimi-ai/FinalVerdict.astro";
+import AffiliateCTAKimi from "../../components/reviews/kimi-ai/AffiliateCTAKimi.astro";
+import ProsCons from "../../components/reviews/kimi-ai/ProsCons.astro";
+---
+
+<MainLayout
+title="Kimi AI Review (2026) | Is It Better Than ChatGPT?"
+description="Our hands-on Kimi AI review after testing its reasoning, coding, writing, document analysis and overall performance."
+canonical="https://creatorstack2-0.pages.dev/reviews/kimi-ai"
+>
+
+<ReviewHero
+title="Kimi AI Review"
+subtitle="We tested Kimi AI extensively to evaluate its reasoning abilities, coding performance, document analysis, writing quality and overall value."
+logo="/images/tools/kimi.png"
+rating={4.9}
+category="AI Assistant"
+/>
+
+<QuickSpecs />
+
+<section class="mx-auto max-w-6xl px-6 py-20">
+
+<span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-bold text-blue-700">
+
+Overview
+
+</span>
+
+<h2 class="mt-6 text-5xl font-extrabold">
+
+What is Kimi AI?
+
+</h2>
+
+<p class="mt-8 text-xl leading-9 text-gray-700">
+
+Kimi AI is an advanced AI assistant developed by Moonshot AI. It has quickly become one of the strongest competitors to ChatGPT thanks to its excellent reasoning capabilities, impressive coding performance, and ability to process extremely long documents.
+
+</p>
+
+<p class="mt-8 text-lg leading-8 text-gray-600">
+
+Unlike many AI assistants that struggle with large PDFs or lengthy conversations, Kimi AI is specifically designed to maintain context across very long inputs. This makes it an outstanding choice for engineers, students, researchers, developers and professionals working with technical documentation.
+
+</p>
+
+<p class="mt-8 text-lg leading-8 text-gray-600">
+
+During our testing we evaluated Kimi AI across multiple real-world scenarios including software development, content writing, document summarization, research, mathematical reasoning and productivity tasks.
+
+</p>
+
+</section>
+
+<HowWeTested />
+
+<Features />
+
+<Screenshots />
+
+<Pricing />
+
+<section class="mx-auto max-w-6xl px-6 py-20">
+
+<h2 class="text-5xl font-extrabold">
+
+CreatorStack Score
+
+</h2>
+
+<p class="mt-6 text-xl text-gray-600">
+
+We evaluate every AI tool using the same testing methodology to ensure consistent and transparent reviews.
+
+</p>
+
+<div class="mt-16 space-y-8">
+
+<div>
+<div class="mb-2 flex justify-between font-semibold">
+<span>AI Quality</span>
+<span>9.8 / 10</span>
+</div>
+
+<div class="h-4 rounded-full bg-gray-200">
+<div class="h-4 rounded-full bg-blue-600" style="width:98%"></div>
+</div>
+</div>
+
+<div>
+<div class="mb-2 flex justify-between font-semibold">
+<span>Ease of Use</span>
+<span>9.4 / 10</span>
+</div>
+
+<div class="h-4 rounded-full bg-gray-200">
+<div class="h-4 rounded-full bg-green-500" style="width:94%"></div>
+</div>
+</div>
+
+<div>
+<div class="mb-2 flex justify-between font-semibold">
+<span>Coding Performance</span>
+<span>9.7 / 10</span>
+</div>
+
+<div class="h-4 rounded-full bg-gray-200">
+<div class="h-4 rounded-full bg-purple-600" style="width:97%"></div>
+</div>
+</div>
+
+<div>
+<div class="mb-2 flex justify-between font-semibold">
+<span>Document Analysis</span>
+<span>9.9 / 10</span>
+</div>
+
+<div class="h-4 rounded-full bg-gray-200">
+<div class="h-4 rounded-full bg-yellow-500" style="width:99%"></div>
+</div>
+</div>
+
+<div>
+<div class="mb-2 flex justify-between font-semibold">
+<span>Value for Money</span>
+<span>10 / 10</span>
+</div>
+
+<div class="h-4 rounded-full bg-gray-200">
+<div class="h-4 rounded-full bg-red-500" style="width:100%"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<ProsCons
+pros={[
+"Outstanding long-context understanding",
+"Excellent coding capabilities",
+"Very fast responses",
+"Excellent free plan",
+"Great research assistant",
+"Simple interface",
+"Supports multiple languages"
+]}
+cons={[
+"Smaller ecosystem than ChatGPT",
+"Few third-party integrations",
+"Some advanced features are still evolving"
+]}
+/>
+
+<RecommendationBox />
+
+<FAQ />
+
+<FinalVerdict />
+
+<AffiliateCTAKimi />
+
+<Footer />
+
+</MainLayout>

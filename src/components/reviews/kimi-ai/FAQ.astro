@@ -1,0 +1,62 @@
+---
+const questions = [
+{
+question: "Is Kimi AI free?",
+answer:
+"Yes. Kimi AI currently offers a generous free plan with access to most of its advanced AI capabilities."
+},
+{
+question: "Who created Kimi AI?",
+answer:
+"Kimi AI was developed by Moonshot AI, a Chinese artificial intelligence company focused on large language models."
+},
+{
+question: "Is Kimi AI good for coding?",
+answer:
+"Yes. During our testing, Kimi AI performed exceptionally well for code generation, debugging and explaining programming concepts."
+},
+{
+question: "Can Kimi AI summarize PDFs?",
+answer:
+"Absolutely. One of Kimi AI's strongest features is understanding and summarizing long documents."
+},
+{
+question: "Is Kimi AI better than ChatGPT?",
+answer:
+"Both are excellent AI assistants. Kimi AI stands out for long-context understanding, while ChatGPT offers a larger ecosystem and more integrations."
+},
+{
+question: "Does Kimi AI support multiple languages?",
+answer:
+"Yes. Kimi AI supports multiple languages, making it useful for users around the world."
+}
+];
+---
+
+<section class="mx-auto max-w-6xl px-6 py-20">
+
+<h2 class="text-4xl font-bold">
+Frequently Asked Questions
+</h2>
+
+<div class="mt-10 space-y-6">
+
+{
+questions.map((item)=>(
+<details class="rounded-2xl border bg-white p-6 shadow-sm">
+
+<summary class="cursor-pointer text-xl font-semibold">
+{item.question}
+</summary>
+
+<p class="mt-4 leading-8 text-gray-600">
+{item.answer}
+</p>
+
+</details>
+))
+}
+
+</div>
+
+</section>
