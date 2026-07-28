@@ -3,7 +3,7 @@ export const affiliateLinks = {
 
   chatgpt: "#",
 
-  elevenlabs: "#",
+  elevenlabs: "https://try.elevenlabs.io/eqc3eif5o5yf",
 
   canva: "https://www.canva.com/ai-assistant/",
 

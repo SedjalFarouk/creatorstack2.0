@@ -14,6 +14,10 @@ import FAQ from "../../components/reviews/kimi-ai/FAQ.astro";
 import FinalVerdict from "../../components/reviews/kimi-ai/FinalVerdict.astro";
 import AffiliateCTAKimi from "../../components/reviews/kimi-ai/AffiliateCTAKimi.astro";
 import ProsCons from "../../components/reviews/kimi-ai/ProsCons.astro";
+import ScoreBreakdown from "../../components/reviews/kimi-ai/ScoreBreakdown.astro";
+import Introduction from "../../components/reviews/kimi-ai/Introduction.astro";
+import AffiliateDisclosure from "../../components/reviews/kimi-ai/AffiliateDisclosure.astro";
+import TableOfContents from "../../components/reviews/kimi-ai/TableOfContents.astro";
 ---
 
 <MainLayout
@@ -30,7 +34,13 @@ rating={4.9}
 category="AI Assistant"
 />
 
+<AffiliateDisclosure />
+
+<Introduction />
+
 <QuickSpecs />
+
+<TableOfContents />
 
 <section class="mx-auto max-w-6xl px-6 py-20">
 
@@ -148,6 +158,8 @@ We evaluate every AI tool using the same testing methodology to ensure consisten
 </div>
 
 </section>
+
+<ScoreBreakdown />
 
 <ProsCons
 pros={[

@@ -1,0 +1,66 @@
+---
+interface Props {
+  pros: string[];
+  cons: string[];
+}
+
+const { pros, cons } = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl px-6 py-20">
+
+<h2 class="text-5xl font-extrabold">
+
+Pros & Cons
+
+</h2>
+
+<div class="mt-12 grid gap-10 lg:grid-cols-2">
+
+<div class="rounded-3xl border border-green-200 bg-green-50 p-8">
+
+<h3 class="text-3xl font-bold text-green-700">
+
+✅ Pros
+
+</h3>
+
+<ul class="mt-8 space-y-4">
+
+pros={[
+"Industry-leading voice quality",
+"Outstanding voice cloning",
+"Professional AI dubbing",
+"Easy to use",
+"Excellent API",
+"Supports many languages",
+"Great free plan"
+]}
+
+</ul>
+
+</div>
+
+<div class="rounded-3xl border border-red-200 bg-red-50 p-8">
+
+<h3 class="text-3xl font-bold text-red-700">
+
+❌ Cons
+
+</h3>
+
+<ul class="mt-8 space-y-4">
+
+cons={[
+"Premium plans can become expensive",
+"Character limits on lower plans",
+"Some advanced voices require paid plans"
+]}
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
