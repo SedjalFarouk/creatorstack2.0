@@ -1,0 +1,68 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Footer from "../../components/Footer.astro";
+
+import ReviewHero from "../../components/reviews/playht/ReviewHero.astro";
+import Features from "../../components/reviews/playht/Features.astro";
+import Pricing from "../../components/reviews/playht/Pricing.astro";
+import FAQ from "../../components/reviews/playht/FAQ.astro";
+import FinalVerdict from "../../components/reviews/playht/FinalVerdict.astro";
+import AffiliateCTAPlayHT from "../../components/reviews/playht/AffiliateCTAPlayHT.astro";
+import RecommendationBox from "../../components/reviews/playht/RecommendationBox.astro";
+import HowWeTested from "../../components/reviews/playht/HowWeTested.astro";
+import Screenshots from "../../components/reviews/playht/Screenshots.astro";
+import ProsCons from "../../components/reviews/playht/ProsCons.astro";
+import ScoreBreakdown from "../../components/reviews/playht/ScoreBreakdown.astro";
+import RelatedReviews from "../../components/reviews/playht/RelatedReviews.astro";
+import ReviewNavigation from "../../components/reviews/playht/ReviewNavigation.astro";
+---
+
+<MainLayout
+title="PlayHT Review (2026) | CreatorStack"
+description="Our hands-on PlayHT review covering voice quality, pricing, features, API, and how it compares with ElevenLabs."
+canonical="https://creatorstack2-0.pages.dev/reviews/playht"
+>
+
+<ReviewHero />
+
+<HowWeTested />
+
+<ScoreBreakdown />
+
+<Features />
+
+<Screenshots />
+
+<Pricing />
+
+<ProsCons
+pros={[
+"Excellent multilingual support",
+"High-quality AI voices",
+"Powerful API",
+"Voice cloning",
+"Easy-to-use interface",
+"Great for businesses"
+]}
+cons={[
+"Voice realism slightly behind ElevenLabs",
+"Premium plans can become expensive",
+"Free plan has usage limits"
+]}
+/>
+
+<RecommendationBox />
+
+<FAQ />
+
+<FinalVerdict />
+
+<AffiliateCTAPlayHT />
+
+<RelatedReviews />
+
+<ReviewNavigation />
+
+<Footer />
+
+</MainLayout>

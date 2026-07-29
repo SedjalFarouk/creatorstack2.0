@@ -12,4 +12,8 @@ export const affiliateLinks = {
   claude: "#",
 
   kimi: "https://kimi.com",
+
+  playht: "#",
+
+  murf: "#",
 };

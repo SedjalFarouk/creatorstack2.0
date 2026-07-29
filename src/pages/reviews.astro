@@ -80,64 +80,38 @@ import ReviewCard from "../components/ReviewCard.astro";
       logo="/images/tools/grammarly.png"
     />
 
-    <a
+    <ReviewCard
+  title="Kimi AI"
+  description="Advanced AI assistant with excellent reasoning, coding, and long-context capabilities."
+  category="AI Chatbot"
+  rating={4.9}
   href="/reviews/kimi-ai"
-  class="group block overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
->
+  logo="/images/tools/kimi.png"
+/>
 
-  <div class="p-8">
+<ReviewCard
+  title="PlayHT"
+  description="Powerful AI voice generator with multilingual support and voice cloning."
+  category="AI Audio"
+  rating={4.7}
+  href="/reviews/playht"
+  logo="/images/tools/playht.png"
+/>
 
-    <div class="flex items-center justify-between">
-
-      <img
-        src="/images/tools/kimi.png"
-        alt="Kimi AI"
-        class="h-16 w-16 rounded-2xl object-contain"
-      />
-
-      <div class="rounded-full bg-yellow-100 px-3 py-2 text-sm font-bold text-yellow-700">
-
-        ⭐ 4.9
-
-      </div>
-
-    </div>
-
-    <h3 class="mt-8 text-2xl font-bold group-hover:text-blue-600">
-
-      Kimi AI
-
-    </h3>
-
-    <p class="mt-4 leading-8 text-gray-600">
-
-      Our complete hands-on review of Kimi AI, covering reasoning, coding, long-context understanding, pricing, strengths, weaknesses, and whether it's worth using in 2026.
-
-    </p>
-
-    <div class="mt-8 flex items-center justify-between">
-
-      <span class="font-bold text-blue-600">
-
-        Free
-
-      </span>
-
-      <span class="font-semibold">
-
-        Read Review →
-
-      </span>
-
-    </div>
-
-  </div>
-
-</a>
+<ReviewCard
+  title="Murf AI"
+  description="Professional AI voice generator for businesses, presentations, and content creators."
+  category="AI Audio"
+  rating={4.6}
+  href="/reviews/murf-ai"
+  logo="/images/tools/murf.png"
+/>
 
   </div>
 
 </section>
+
+
 
 <Footer />
 
